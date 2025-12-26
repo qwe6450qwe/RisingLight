@@ -1,19 +1,36 @@
-﻿<local:MyCard Title="月梦初晓 | RisingLight Minecraft服务器" Margin="0,0,0,15" CanSwap="False">
+﻿<local:MyCard Title="月梦初晓 | RisingLight" Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="25,40,23,15">
         <TextBlock 
         TextWrapping="Wrap" 
-        Text="欢迎来到 月梦初晓 | RisingLight "/>
+        Text="欢迎来到 月梦初晓 | RisingLight Minecraft 服务器 ~"/>
         <TextBlock 
         TextWrapping="Wrap" 
         Text="如果你是第一次来到这里，请根据启动器内显示的步骤或点击下方服务器腾讯文档了解如何加入服务器~" />
         <local:MyButton 
+        Margin="0,10,0,0"
         HorizontalAlignment="Center"
         ColorType="Highlight"
-        Margin="0,4,0,10" 
         Height="35"  
-        Padding="0,0,0,0" 
+        Padding="25,10,25,10" 
         Text="服务器信息文档" 
+        ToolTip="点击在浏览器中打开"
         EventType="打开网页" 
         EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_mWgWz8"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Step 1: 阅读服务器协议" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock 
+        TextWrapping="Wrap" 
+        Text="在进入游戏前，请务必花些时间仔细阅读并理解《用户协议》的全部内容。您对本服务的任何使用行为，即视为您已阅读、理解并同意接受本协议及所有提及的相关政策（包括但不限于服务器内部规则、隐私政策等）的全部条款约束。" />
+        <local:MyListItem
+        Margin="0,10,0,0"
+        Title="用户协议" 
+        Info="请务必仔细阅读用户协议全部内容"
+        EventType="打开网页" 
+        EventData="https://docs.qq.com/doc/DTWdhQnRCak5hQU9S?nlc=1"
+        Logo="pack://application:,,,/images/Blocks/CommandBlock.png" 
+        Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
