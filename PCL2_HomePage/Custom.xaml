@@ -1,0 +1,19 @@
+﻿<local:MyCard Title="月梦初晓 | RisingLight Minecraft服务器" Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock 
+        TextWrapping="Wrap" 
+        Text="欢迎来到 月梦初晓 | RisingLight "/>
+        <TextBlock 
+        TextWrapping="Wrap" 
+        Text="如果你是第一次来到这里，请根据启动器内显示的步骤或点击下方服务器腾讯文档了解如何加入服务器~" />
+        <local:MyButton 
+        HorizontalAlignment="Center"
+        ColorType="Highlight"
+        Margin="0,4,0,10" 
+        Height="35"  
+        Padding="25,25,25,0" 
+        Text="服务器信息文档" 
+        EventType="打开网页" 
+        EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_mWgWz8"/>
+    </StackPanel>
+</local:MyCard>
