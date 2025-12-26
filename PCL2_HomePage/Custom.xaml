@@ -29,6 +29,7 @@
                 Height="35"  
                 Padding="25,10,25,10" 
                 Text="游戏模组列表" 
+                ToolTip="服务器使用的所有游戏模组列表"
                 EventType="打开网页" 
                 EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=BB08J2"/>
             <local:MyButton 
@@ -37,6 +38,7 @@
                 Height="35"  
                 Padding="25,10,25,10" 
                 Text="三方软件授权" 
+                ToolTip="服务器使用的第三方软件及其授权信息"
                 EventType="打开网页" 
                 EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_qwTbtK"/>
         </StackPanel>
@@ -48,6 +50,7 @@
                 Height="35"  
                 Padding="25,10,25,10" 
                 Text="获取帮助支持" 
+                ToolTip="先看看这里，如果没有解决再去反馈"
                 EventType="打开网页" 
                 EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_kgcGzT"/>
             <local:MyButton 
