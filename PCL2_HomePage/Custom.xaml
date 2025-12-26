@@ -1,36 +1,129 @@
 ﻿<local:MyCard Title="月梦初晓 | RisingLight" Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="25,40,23,15">
         <TextBlock 
-        TextWrapping="Wrap" 
+            Margin="0,0,0,5"
+            TextWrapping="Wrap" 
         Text="欢迎来到 月梦初晓 | RisingLight Minecraft 服务器 ~"/>
         <TextBlock 
-        TextWrapping="Wrap" 
-        Text="如果你是第一次来到这里，请根据启动器内显示的步骤或点击下方服务器腾讯文档了解如何加入服务器~" />
-        <local:MyButton 
-        Margin="0,10,0,0"
-        HorizontalAlignment="Center"
-        ColorType="Highlight"
-        Height="35"  
-        Padding="25,10,25,10" 
-        Text="服务器信息文档" 
-        ToolTip="点击在浏览器中打开"
-        EventType="打开网页" 
-        EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_mWgWz8"/>
+            Margin="0,0,0,5"
+            TextWrapping="Wrap" 
+            Text="如果你是第一次来到这里，请根据启动器内显示步骤或点击下方服务器腾讯文档了解如何加入服务器~" />
+        <TextBlock 
+            TextWrapping="Wrap" 
+            Text="这里也提供了一些服务器相关的资源和帮助信息，可以点击按钮跳转查看" />
+
+        <!-- 第一行 -->
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton 
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                ColorType="Highlight"
+                Height="35"  
+                Padding="25,10,25,10" 
+                Text="信息文档合集" 
+                EventType="打开网页" 
+                EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_mWgWz8"/>
+            <local:MyButton 
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                Height="35"  
+                Padding="25,10,25,10" 
+                Text="游戏模组列表" 
+                EventType="打开网页" 
+                EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=BB08J2"/>
+            <local:MyButton 
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                Height="35"  
+                Padding="25,10,25,10" 
+                Text="三方软件授权" 
+                EventType="打开网页" 
+                EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_qwTbtK"/>
+        </StackPanel>
+        <!-- 第二行 -->
+        <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton 
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                Height="35"  
+                Padding="25,10,25,10" 
+                Text="获取帮助支持" 
+                EventType="打开网页" 
+                EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_kgcGzT"/>
+            <local:MyButton 
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                Height="35"  
+                Padding="25,10,25,10" 
+                ColorType="Highlight"
+                Text="加入游戏频道" 
+                ToolTip="你为什么还没有加入QQ频道呢"
+                EventType="打开网页" 
+                EventData="https://pd.qq.com/s/hf43kuq6g"/>
+            <local:MyButton 
+                ColorType="Red"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Left"
+                Height="35"  
+                Padding="25,10,25,10" 
+                Text="反馈漏洞建议" 
+                EventType="打开网页" 
+                ToolTip="你应该知道怎么有效反馈问题的"
+                EventData="https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=tLjzII"/>
+        </StackPanel>
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="Step 1: 阅读服务器协议" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
     <StackPanel Margin="25,40,23,15">
         <TextBlock 
-        TextWrapping="Wrap" 
-        Text="在进入游戏前，请务必花些时间仔细阅读并理解《用户协议》的全部内容。您对本服务的任何使用行为，即视为您已阅读、理解并同意接受本协议及所有提及的相关政策（包括但不限于服务器内部规则、隐私政策等）的全部条款约束。" />
+            TextWrapping="Wrap" 
+            Text="在进入游戏前，请务必花些时间仔细阅读并理解《用户协议》的全部内容。您对本服务的任何使用行为，即视为您已阅读、理解并同意接受本协议及所有提及的相关政策（包括但不限于服务器内部规则、隐私政策等）的全部条款约束。" />
         <local:MyListItem
-        Margin="0,10,0,0"
-        Title="用户协议" 
-        Info="请务必仔细阅读用户协议全部内容"
-        EventType="打开网页" 
-        EventData="https://docs.qq.com/doc/DTWdhQnRCak5hQU9S?nlc=1"
-        Logo="pack://application:,,,/images/Blocks/CommandBlock.png" 
-        Type="Clickable"/>
+            Margin="0,10,0,0"
+            Title="月梦初晓MC 用户协议" 
+            Info="请务必仔细阅读用户协议全部内容"
+            EventType="打开网页" 
+            EventData="https://docs.qq.com/doc/DTWdhQnRCak5hQU9S?nlc=1"
+            Logo="pack://application:,,,/images/Blocks/Fabric.png" 
+            Type="Clickable"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Step 2: 申请服务器白名单" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock 
+            TextWrapping="Wrap" 
+            Text="由于为了吸纳更多玩家，服务器并没有开启在线验证。但是为了优化玩家体验以及减少恶意玩家对服务器破坏，我们开启了白名单验证。所以请先申请白名单通行证。" />
+        <local:MyListItem
+            Margin="0,10,0,10"
+            Title="月梦初晓MC 游戏通行证申请" 
+            Info="注册并使用Minecraft统一登录通行证登录服务器"
+            EventType="打开网页" 
+            EventData="https://login.mc-user.com:233/46ce55a6e26111f09215e04acd26563f/register"
+            Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" 
+            Type="Clickable"/>
+            <TextBlock 
+            TextWrapping="Wrap" 
+            Text="如果您遇到问题，可以向任意管理员求助" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Step 3: Minecraft，启动!" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock 
+            Margin="0,0,0,5"
+            TextWrapping="Wrap" 
+            Text="注册通行证后，在左侧游戏启动面板输入账号用户名和密码，配置好JAVA和内存，就可以点击左侧的启动游戏来加入游戏~" />
+    </StackPanel>
+</local:MyCard>
+
+
+<local:MyCard Title="疑难解答" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock 
+            Margin="0,0,0,5"
+            TextWrapping="Wrap" 
+            Text="这里的疑难解答可能更新不及时，建议点上方的“获取帮助支持”按钮查看最新内容。" />
     </StackPanel>
 </local:MyCard>
